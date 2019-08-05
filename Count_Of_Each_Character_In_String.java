@@ -23,7 +23,12 @@ public class Count_Of_Each_Character_In_String {
 		
 		for(Map.Entry entry : charCountMap.entrySet())
 		{
-			System.out.println(entry.getKey() + " is " + entry.getValue()+" times in "+Str);
+			if(entry.getKey().equals(' '))
+			{
+				System.out.println("White Spaces is " + entry.getValue()+" times in "+Str);
+			}
+			else
+				System.out.println(entry.getKey() + " is " + entry.getValue()+" times in "+Str);
 		}
 	}
 	
