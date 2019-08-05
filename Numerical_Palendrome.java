@@ -7,23 +7,24 @@ public class Numerical_Palendrome {
 	public static void main(String[] args) {
 		// Get Input from use
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Please input a number to find if it is Palendrome or Not: ");
+		System.out.println("Please input a number to find if it is Palendrome or Not:");
 		int userInput = sc.nextInt();
-		System.out.println("User input is: "+userInput);
-		
-		
+		System.out.println("User input is: "+ userInput);
 		sc.close();
 		
+		//Check for negative number
 		if(userInput<0) 
 		{
 			System.out.println("Negative Inputs are not applicable");
 			System.exit(1);
 		}
+		//Check for single digit number
 		else if(userInput>=0 && userInput<=9)
 		{
 			System.out.println(userInput+" is palendrome as it is single digit number");
 			System.exit(1);	
 		}
+		//Check if number is palendrome or not
 		else
 		{
 			int temp = userInput;
